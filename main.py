@@ -28,3 +28,6 @@ class car_app:
 
         self.label_unit = tk.Label(self.root, text="KM/H", fg="white", bg="#1a1a1b")
         self.label_unit.pack()
+
+        self.frame_controls = tk.Frame(self.root, bg="#1a1a1b")
+        self.frame_controls.pack(pady=30)
