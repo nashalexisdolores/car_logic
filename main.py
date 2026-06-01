@@ -43,3 +43,8 @@ class car_app:
             command=self.handle_braking, font=("Arial", 10, "bold"), relief="flat"
         )
         self.btn_brake.grid(row=0, column=1, padx=10)
+
+    def handle_acceleration(self):
+        """Triggers speed increase and updates UI."""
+        self.my_car.accelerate()
+        self.refresh_dashboard()
