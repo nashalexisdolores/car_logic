@@ -48,3 +48,20 @@ class car_app:
         """Triggers speed increase and updates UI."""
         self.my_car.accelerate()
         self.refresh_dashboard()
+
+    def handle_braking(self):
+        """Triggers speed decrease and updates UI."""
+        self.my_car.brake()
+        self.refresh_dashboard()
+
+    def refresh_dashboard(self):
+        """Updates the speed label and changes color based on speed."""
+        speed = self.my_car.get_speed()
+        self.label_speed.config(text=str(speed))
+        
+        if speed > 120:
+            self.label_speed.config(fg="#ff1744")  
+        elif speed > 60:
+            self.label_speed.config(fg="#ffea00")  
+        else:
+            self.label_speed.config(fg="#00ff41")  
