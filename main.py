@@ -64,4 +64,9 @@ class car_app:
         elif speed > 60:
             self.label_speed.config(fg="#ffea00")  
         else:
-            self.label_speed.config(fg="#00ff41")  
+            self.label_speed.config(fg="#00ff41") 
+
+if __name__ == "__main__":
+    root_window = tk.Tk()
+    app_instance = car_app(root_window)
+    root_window.mainloop() 
