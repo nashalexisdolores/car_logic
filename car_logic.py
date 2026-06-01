@@ -3,3 +3,6 @@ class car_logic:
         self.__year_model = year_model
         self.__make = make
         self.__current_speed = 0
+
+    def accelerate(self):
+        self.__current_speed += 5
