@@ -6,3 +6,9 @@ class car_logic:
 
     def accelerate(self):
         self.__current_speed += 5
+
+    def brake(self):
+        if self.__current_speed >= 5:
+            self.__current_speed -= 5
+        else:
+            self.__current_speed = 0
