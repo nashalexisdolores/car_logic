@@ -11,3 +11,11 @@ class car_app:
         self.my_car = car_logic(2026, "Nirvana Cyber-GT")
 
         self.setup_ui()
+
+    def setup_ui(self):
+        """Creates the visual elements for the dashboard."""
+        self.label_info = tk.Label(
+            self.root, text=self.my_car.get_info().upper(),
+            font=("Courier New", 14, "bold"), fg="#d4af37", bg="#1a1a1b"
+        )
+        self.label_info.pack(pady=20)
