@@ -30,4 +30,16 @@ class car_app:
         self.label_unit.pack()
 
         self.frame_controls = tk.Frame(self.root, bg="#1a1a1b")
-        self.frame_controls.pack(pady=30)
+        self.frame_controls.pack(pady=30) 
+
+        self.btn_gas = tk.Button(
+            self.frame_controls, text="ACCELERATE", width=12, bg="#2e7d32", fg="white",
+            command=self.handle_acceleration, font=("Arial", 10, "bold"), relief="flat"
+        )
+        self.btn_gas.grid(row=0, column=0, padx=10)
+
+        self.btn_brake = tk.Button(
+            self.frame_controls, text="BRAKE", width=12, bg="#c62828", fg="white",
+            command=self.handle_braking, font=("Arial", 10, "bold"), relief="flat"
+        )
+        self.btn_brake.grid(row=0, column=1, padx=10)
