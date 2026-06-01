@@ -19,3 +19,12 @@ class car_app:
             font=("Courier New", 14, "bold"), fg="#d4af37", bg="#1a1a1b"
         )
         self.label_info.pack(pady=20)
+
+        self.label_speed = tk.Label(
+            self.root, text="0",
+            font=("Impact", 60), fg="#00ff41", bg="#1a1a1b"
+        )
+        self.label_speed.pack()
+
+        self.label_unit = tk.Label(self.root, text="KM/H", fg="white", bg="#1a1a1b")
+        self.label_unit.pack()
