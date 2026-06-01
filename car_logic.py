@@ -12,3 +12,9 @@ class car_logic:
             self.__current_speed -= 5
         else:
             self.__current_speed = 0
+
+    def get_speed(self):
+        return self.__current_speed
+
+    def get_info(self):
+        return f"{self.__year_model} {self.__make}"
